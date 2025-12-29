@@ -1,25 +1,12 @@
 CompileFlags:
   Add:
     - -std=c++17
-    # MinGW include paths (based on GCC 15.1.0 output)
+    - -IC:/mingw64/include
     - -IC:/mingw64/include/c++/15.1.0
     - -IC:/mingw64/include/c++/15.1.0/x86_64-w64-mingw32
-    - -IC:/mingw64/include/c++/15.1.0/backward
-    - -IC:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include
-    - -IC:/mingw64/include
-    - -IC:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include-fixed
     - -IC:/mingw64/x86_64-w64-mingw32/include
-    # Additional useful flags
-    - -Wall
-    - -Wextra
     - -Wno-unused-variable
     - -Wno-unused-parameter
-    - -DWIN32
-    - -D_WIN32
-    - -D__MINGW32__
-    - -D__MINGW64__
-    # Target specification
-    - --target=x86_64-w64-mingw32
     
 Diagnostics:
   ClangTidy:
@@ -27,18 +14,3 @@ Diagnostics:
       - readability-*
       - google-*
       - modernize-*
-      - hicpp-*
-      - cppcoreguidelines-*
-
-Index:
-  StandardLibrary: true
-  Background: Build
-
-Completion:
-  AllScopes: true
-  ArgumentLists: FullPlaceholders
-
-InlayHints:
-  Enabled: false
-  ParameterNames: false
-  DeducedTypes: false

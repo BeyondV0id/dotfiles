@@ -109,6 +109,8 @@ NVIM_APPNAME=harsha007009/nvim-config/ nvim
 - [L3MON4D3/LuaSnip](https://dotfyle.com/plugins/L3MON4D3/LuaSnip)
 - [rafamadriz/friendly-snippets](https://dotfyle.com/plugins/rafamadriz/friendly-snippets)
 
+syntax
+
 ### syntax
 
 - [nvim-treesitter/nvim-treesitter](https://dotfyle.com/plugins/nvim-treesitter/nvim-treesitter)
@@ -122,8 +124,6 @@ NVIM_APPNAME=harsha007009/nvim-config/ nvim
 - [atiladefreitas/dooing](https://dotfyle.com/plugins/atiladefreitas/dooing)
 
 ### web-development
-
-- [roobert/tailwindcss-colorizer-cmp.nvim](https://dotfyle.com/plugins/roobert/tailwindcss-colorizer-cmp.nvim)
 
 ## Language Servers
 

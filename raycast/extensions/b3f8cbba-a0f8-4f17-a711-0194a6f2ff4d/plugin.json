@@ -1,9 +1,0 @@
-{
-  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
-  "name": "youtube",
-  "description": "Search YouTube videos, channels and live streams, browse popular videos, and open them in your browser or IINA.",
-  "author": {
-    "name": "tonka3000"
-  },
-  "license": "MIT"
-}

@@ -14,3 +14,13 @@ configstore/
 # Scoop install tree (restore with: scoop install fastfetch)
 fastfetch/2.51.1/
 fastfetch/current
+
+# App state — keep locally, don't track in dotfiles
+cava/
+posting/
+raycast/
+scoop/
+vscode/
+git/
+opencode/
+winfetch/

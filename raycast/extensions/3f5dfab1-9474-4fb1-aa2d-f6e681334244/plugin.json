@@ -1,9 +1,0 @@
-{
-  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
-  "name": "reddit-search",
-  "description": "Search Reddit posts, find and favorite subreddits, and search within a subreddit, with sorting by relevance, hot, top or latest.",
-  "author": {
-    "name": "ewlcheng"
-  },
-  "license": "MIT"
-}

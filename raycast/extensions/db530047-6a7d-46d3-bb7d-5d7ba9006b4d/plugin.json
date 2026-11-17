@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "speedtest",
+  "description": "Run an internet speed test with Speedtest.net and check your download and upload speed, ping, jitter and packet loss.",
+  "author": {
+    "name": "tonka3000"
+  },
+  "license": "MIT"
+}

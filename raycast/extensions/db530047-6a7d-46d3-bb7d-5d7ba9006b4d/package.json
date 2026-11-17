@@ -1,0 +1,167 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "speedtest",
+  "title": "Speedtest",
+  "description": "Run an internet speed test with Speedtest.net and check your download and upload speed, ping, jitter and packet loss.",
+  "icon": "speedtest.png",
+  "author": "tonka3000",
+  "contributors": [
+    "koayon",
+    "pernielsentikaer",
+    "stevensd2m",
+    "aliaksandr_zhebit",
+    "xilopaint",
+    "alexi.build",
+    "luarmr"
+  ],
+  "license": "MIT",
+  "categories": [
+    "Applications",
+    "Developer Tools"
+  ],
+  "commands": [
+    {
+      "name": "index",
+      "title": "Test Internet Speed",
+      "description": "Test the performance and quality of your internet connection via speedtest.net",
+      "mode": "view"
+    }
+  ],
+  "tools": [
+    {
+      "name": "run-speedtest",
+      "title": "Run Speed Test",
+      "description": "Measure the current internet connection's download speed, upload speed, ping, jitter, and packet loss. Each call starts a new speed test.",
+      "instructions": "Run a new Ookla speed test and return the final connection measurements.",
+      "output": {
+        "type": "object",
+        "properties": {
+          "download": {
+            "type": "string"
+          },
+          "upload": {
+            "type": "string"
+          },
+          "pingMs": {
+            "type": "number"
+          },
+          "jitterMs": {
+            "type": "number"
+          },
+          "packetLossPercent": {
+            "type": "number"
+          },
+          "isp": {
+            "type": "string"
+          },
+          "server": {
+            "type": "string"
+          },
+          "resultUrl": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "download",
+          "upload",
+          "pingMs",
+          "jitterMs",
+          "packetLossPercent",
+          "isp",
+          "server",
+          "resultUrl"
+        ]
+      },
+      "confirmation": false
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.104.0",
+    "extract-zip": "^2.0.1",
+    "sha256-file": "^1.0.0",
+    "tar": "^7.5.22"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "^2.1.3",
+    "@types/node": "22.13.10",
+    "@types/react": "19.0.10",
+    "@types/sha256-file": "^1.0.3",
+    "@types/tar": "^6.1.13",
+    "eslint": "^9.22.0",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.2"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint",
+    "publish": "npx @raycast/api@latest publish"
+  },
+  "platforms": [
+    "macOS",
+    "Windows"
+  ],
+  "overrides": {
+    "tar": "^7.5.22",
+    "brace-expansion": "5.0.9",
+    "js-yaml@4": "4.3.2"
+  },
+  "ai": {
+    "instructions": "Use run-speedtest when the user asks to measure their current internet connection.\nEach call starts a new test. Report the measured values with their units and do not imply that a past result is current.\n",
+    "evals": [
+      {
+        "input": "@speedtest How fast is my internet connection right now?",
+        "mocks": {
+          "run-speedtest": {
+            "download": "120 Mbps",
+            "upload": "25 Mbps",
+            "pingMs": 14,
+            "jitterMs": 2,
+            "packetLossPercent": 0,
+            "isp": "Example ISP",
+            "server": "Example Server, New York",
+            "resultUrl": "https://www.speedtest.net/result/example"
+          }
+        },
+        "expected": [
+          {
+            "callsTool": "run-speedtest"
+          },
+          {
+            "includes": "120 Mbps"
+          },
+          {
+            "includes": "25 Mbps"
+          }
+        ]
+      },
+      {
+        "input": "@speedtest Check my connection's latency and packet loss.",
+        "mocks": {
+          "run-speedtest": {
+            "download": "80 Mbps",
+            "upload": "15 Mbps",
+            "pingMs": 28,
+            "jitterMs": 5,
+            "packetLossPercent": 1,
+            "isp": "Example ISP",
+            "server": "Example Server, New York",
+            "resultUrl": "https://www.speedtest.net/result/example"
+          }
+        },
+        "expected": [
+          {
+            "callsTool": "run-speedtest"
+          },
+          {
+            "includes": "28 ms"
+          },
+          {
+            "matches": "1\\s?%"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "opencode": "C:\\Users\\harsh\\AppData\\Roaming\\npm\\opencode",
+  "entry": "C:\\Users\\harsh\\.local\\bin\\browse.exe",
+  "version": "0.0.17",
+  "agents": [
+    {
+      "name": "codex",
+      "file": "C:\\Users\\harsh\\.codex\\config.toml",
+      "entry": "C:\\Users\\harsh\\.local\\bin\\browse.exe"
+    }
+  ],
+  "opencodeConfigs": [
+    "C:\\Users\\harsh\\.config\\opencode\\opencode.json"
+  ]
+}

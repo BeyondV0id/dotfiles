@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "svgl",
+  "description": "Search SVG logos for brands and tech companies from svgl, copy them as SVG or React components, and request new logos.",
+  "author": {
+    "name": "1weiho"
+  },
+  "license": "MIT"
+}

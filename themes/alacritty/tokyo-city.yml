@@ -1,0 +1,23 @@
+# Example Alacritty theme: Tokyo City Terminal Dark
+colors:
+  primary:
+    background: "0x17191e"
+    foreground: "0xd8dee9"
+  normal:
+    black: "0x17191e"
+    red: "0xc5737c"
+    green: "0x87a987"
+    yellow: "0xe7c664"
+    blue: "0x6aa1ff"
+    magenta: "0xba8baf"
+    cyan: "0x8ec5d6"
+    white: "0xe6e6e6"
+  bright:
+    black: "0x444a53"
+    red: "0xdf5b61"
+    green: "0x87c095"
+    yellow: "0xf7ca6a"
+    blue: "0x7aa2f7"
+    magenta: "0xc792ea"
+    cyan: "0x89ddff"
+    white: "0xffffff"

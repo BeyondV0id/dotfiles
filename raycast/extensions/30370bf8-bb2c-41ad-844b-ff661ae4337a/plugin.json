@@ -1,0 +1,16 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "video-downloader",
+  "description": "Download videos and audio from YouTube, X (Twitter), Twitch, Instagram, Bilibili and more with yt-dlp, and extract video transcripts with AI.",
+  "author": {
+    "name": "vimtor"
+  },
+  "license": "MIT",
+  "keywords": [
+    "video",
+    "downloader",
+    "youtube",
+    "bilibili",
+    "yt-dlp"
+  ]
+}

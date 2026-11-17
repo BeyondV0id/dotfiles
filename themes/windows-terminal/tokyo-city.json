@@ -1,0 +1,21 @@
+{
+  "name": "Tokyo City Terminal Dark",
+  "background": "#17191e",
+  "foreground": "#d8dee9",
+  "black": "#17191e",
+  "red": "#c5737c",
+  "green": "#87a987",
+  "yellow": "#e7c664",
+  "blue": "#6aa1ff",
+  "purple": "#ba8baf",
+  "cyan": "#8ec5d6",
+  "white": "#e6e6e6",
+  "brightBlack": "#444a53",
+  "brightRed": "#df5b61",
+  "brightGreen": "#87c095",
+  "brightYellow": "#f7ca6a",
+  "brightBlue": "#7aa2f7",
+  "brightPurple": "#c792ea",
+  "brightCyan": "#89ddff",
+  "brightWhite": "#ffffff"
+}

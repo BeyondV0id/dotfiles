@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "kill-process",
+  "description": "Find and kill processes sorted by CPU or memory usage, force quit apps and background processes, with AI tools to list and end processes.",
+  "author": {
+    "name": "rolandleth"
+  },
+  "license": "MIT"
+}

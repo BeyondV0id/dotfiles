@@ -1,0 +1,16 @@
+# Secrets — never push to a public repo
+opencode/antigravity-accounts.json
+**/antigravity-accounts.json
+
+# Dependencies / vendored caches — restore with package managers
+**/node_modules/
+raycast/node-compile-cache/
+
+# Logs and caches
+**/*.log
+.nvimlog
+configstore/
+
+# Scoop install tree (restore with: scoop install fastfetch)
+fastfetch/2.51.1/
+fastfetch/current

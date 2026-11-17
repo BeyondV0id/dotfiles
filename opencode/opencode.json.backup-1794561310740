@@ -1,0 +1,83 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "plugins": [
+    "opencode-antigravity-auth@2.1.2"
+  ],
+  "provider": {
+    "nvidia": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "NVIDIA NIM",
+      "options": {
+        "baseURL": "https://integrate.api.nvidia.com/v1",
+        "apiKey": "{env:NVIDIA_API_KEY}"
+      },
+      "models": {
+        "z-ai/glm-5.3-flash": {
+          "name": "GLM-5.3-Flash"
+        }
+      }
+    },
+    "fcm-nvidia": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "FCM NVIDIA NIM",
+      "options": {
+        "baseURL": "https://integrate.api.nvidia.com/v1",
+        "apiKey": "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"
+      },
+      "models": {
+        "z-ai/glm-5.3-flash": {
+          "name": "GLM-5.3-Flash"
+        },
+        "nvidia/nemotron-3.5-super-vl-120b-a12b": {
+          "name": "Nemotron 3.5 Super VL"
+        },
+        "stepfun-ai/step-5-preview": {
+          "name": "Step 5 Preview"
+        },
+        "nvidia/nemotron-3-ultra-550b-a55b": {
+          "name": "Nemotron 3 Ultra"
+        },
+        "poolside/laguna-xs-2.1": {
+          "name": "Laguna XS 2.1"
+        },
+        "moonshotai/kimi-k2.6": {
+          "name": "Kimi K2.6"
+        },
+        "minimaxai/minimax-m3.1-flash": {
+          "name": "MiniMax M3.1 Flash"
+        },
+        "mistralai/mistral-large-4-1t-a52b": {
+          "name": "Mistral Large 4"
+        },
+        "meta/muse-glimmer-30b": {
+          "name": "Muse Glimmer 30B"
+        },
+        "nvidia/nemotron-3-super-120b-a12b": {
+          "name": "Nemotron 3 Super"
+        },
+        "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning": {
+          "name": "Nemotron 3 Omni"
+        },
+        "nvidia/nemotron-3.5-lightning-30b-a3b": {
+          "name": "Nemotron 3.5 Lightning 30B"
+        },
+        "deepseek-ai/deepseek-v4.1-flash": {
+          "name": "DeepSeek V4.1 Flash"
+        },
+        "openai/gpt-oss-20b": {
+          "name": "GPT OSS 20B"
+        },
+        "google/gemma-4-31b-it": {
+          "name": "Gemma 4 31B"
+        },
+        "google/diffusiongemma-26b-a4b-it": {
+          "name": "DiffusionGemma 26B"
+        },
+        "nvidia/nemotron-3.5-bolt-e4b": {
+          "name": "Nemotron 3.5 Bolt E4B"
+        }
+      }
+    }
+  },
+  "model": "nvidia/z-ai/glm-5.3-flash"
+}

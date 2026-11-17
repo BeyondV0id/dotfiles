@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "google-search",
+  "description": "Search Google with live autosuggestions, search selected text, and keep a local search history, on Mac and Windows.",
+  "author": {
+    "name": "mblode"
+  },
+  "license": "MIT"
+}

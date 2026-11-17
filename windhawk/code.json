@@ -1,0 +1,22 @@
+{
+  "theme": "DockLike",
+  "controlStyles[0].target": "Taskbar.TaskbarFrame#TaskbarFrame",
+  "controlStyles[0].styles[0]": "Background=Transparent",
+  "controlStyles[1].target": "Taskbar.TaskbarFrame#TaskbarFrame > Grid#RootGrid",
+  "controlStyles[1].styles[0]": "Background:=<WindhawkBlur BlurAmount=\"25\" TintColor=\"#50181818\"/>",
+  "controlStyles[1].styles[1]": "CornerRadius=12",
+  "controlStyles[1].styles[2]": "BorderThickness=1",
+  "controlStyles[1].styles[3]": "BorderBrush:=<SolidColorBrush Color=\"#FFFFFF\" Opacity=\"0.15\"/>",
+  "controlStyles[2].target": "Rectangle#BackgroundFill",
+  "controlStyles[2].styles[0]": "Visibility=Collapsed",
+  "controlStyles[3].target": "Rectangle#BackgroundStroke",
+  "controlStyles[3].styles[0]": "Visibility=Collapsed",
+  "controlStyles[4].target": "Grid#SystemTrayFrameGrid",
+  "controlStyles[4].styles[0]": "Background=Transparent",
+  "controlStyles[4].styles[1]": "CornerRadius=12",
+  "controlStyles[5].target": "SystemTray.SystemTrayFrame",
+  "controlStyles[5].styles[0]": "Background=Transparent",
+  "styleConstants[0]": "",
+  "resourceVariables[0].variableKey": "",
+  "resourceVariables[0].value": ""
+}

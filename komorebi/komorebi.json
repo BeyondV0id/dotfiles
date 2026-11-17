@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/LGUG2Z/komorebi/v0.1.33/schema.json",
+  "app_specific_configuration_path": "$Env:USERPROFILE/applications.json",
+  "cross_monitor_move_behaviour": "Insert",
+  "window_hiding_behaviour": "Cloak",
+  "default_workspace_padding": 2,
+  "default_container_padding": 1,
+  "floating_applications": [
+    {
+      "kind": "Exe",
+      "id": "Yasb_themes.exe",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Class",
+      "id": "RarReminder",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Exe",
+      "id": "ChatGPT.exe",
+      "matching_strategy": "Equals"
+    }
+  ],
+  "ignore_rules": [
+    {
+      "kind": "Exe",
+      "id": "Yasb.exe",
+      "matching_strategy": "Equals"
+    }
+  ],
+  "mouse_follows_focus": false,
+  "transparency": true,
+  "transparency_alpha": 220,
+  "animation": {
+    "enabled": true,
+    "fps": 144,
+    "duration": 200,
+    "style": {
+      "movement": "EaseOutBack",
+      "transparency": "Linear"
+    }
+  },
+  "border": true,
+  "border_implementation": "Komorebi",
+  "border_style": "System",
+  "border_width": 3,
+  "border_colours": {
+    "single": "#94e2d5",
+    "unfocused": "#45475a",
+    "floating": "#45475a",
+    "stack": "#cba6f7"
+  },
+  "stackbar": {
+    "height": 25,
+    "mode": "Never",
+    "tabs": {
+      "width": 125,
+      "focused_text": "#74c7ec",
+      "unfocused_text": "#cdd6f4",
+      "background": "#1e1e2e",
+      "font_family": "JetBrainsMono Nerd Font",
+      "font_size": 14
+    }
+  },
+  "window_manager_keybindings": [
+    {
+      "command": "ToggleMaximize",
+      "key": "win+m"
+    },
+    {
+      "command": "Minimize",
+      "key": "win+shift+m"
+    },
+    {
+      "command": "ToggleMaximize",
+      "key": "win+space"
+    }
+  ],
+  "monitors": [
+    {
+      "workspaces": [
+        {
+          "name": "I",
+          "layout": "BSP"
+        },
+        {
+          "name": "II",
+          "layout": "BSP"
+        },
+        {
+          "name": "III",
+          "layout": "BSP"
+        },
+        {
+          "name": "IV",
+          "layout": "BSP"
+        },
+        {
+          "name": "V",
+          "layout": "BSP"
+        }
+      ]
+    }
+  ]
+}

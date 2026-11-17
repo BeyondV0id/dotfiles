@@ -1,0 +1,16 @@
+CompileFlags:
+  Add:
+    - -std=c++17
+    - -IC:/mingw64/include
+    - -IC:/mingw64/include/c++/15.1.0
+    - -IC:/mingw64/include/c++/15.1.0/x86_64-w64-mingw32
+    - -IC:/mingw64/x86_64-w64-mingw32/include
+    - -Wno-unused-variable
+    - -Wno-unused-parameter
+    
+Diagnostics:
+  ClangTidy:
+    Remove:
+      - readability-*
+      - google-*
+      - modernize-*

@@ -1,0 +1,79 @@
+{
+  "workbench.editor.empty.hint": "hidden",
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontLigatures": true,
+  "sqldeveloper.sqlHistory.historyLimit": 500,
+  "sqldeveloper.telemetry.enabled": false,
+  "leetcode.workspaceFolder": "d:\\problemsolving\\practise",
+  "leetcode.hint.configWebviewMarkdown": false,
+  "leetcode.hint.commentDescription": false,
+  "labuladong-leetcode.workspaceFolder": "d:\\problemsolving\\practise",
+  "labuladong-leetcode.endpoint": "leetcode",
+
+  "workbench.iconTheme": "symbols",
+  "editor.fontSize": 14,
+
+  "tailwindCSS.experimental.configFile": "src/style.css",
+
+  "files.autoSave": "afterDelay",
+  "leetcode.enableSideMode": false,
+  "lldb.suppressUpdateNotifications": true,
+  "files.autoSaveDelay": 0,
+  "explorer.confirmDragAndDrop": false,
+  "liveServer.settings.donotVerifyTags": true,
+
+  "terminal.integrated.sendKeybindings": true,
+
+  "vim.leader": "<space>",
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    }
+  ],
+
+  "github.copilot.enable": {
+    "*": false
+  },
+
+  "vim.handleKeys": {
+    "<C-q>": false,
+    "<C-c>": false,
+    "<C-s>": false,
+    "<C-a>": false,
+    "<C-h>": false,
+    "<C-j>": false,
+    "<C-k>": false,
+    "<C-d>": false,
+    "<C-l>": false,
+    "<space>": true
+  },
+
+  "notes.notesLocation": "d:\\vim motions",
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "workbench.colorTheme": "Vesper",
+  "editor.minimap.enabled": false,
+  "window.autoDetectColorScheme": true,
+  "workbench.preferredDarkColorTheme": "Sequoia Moonlight",
+
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "chat.mcp.discovery.enabled": true,
+
+  "liveServer.settings.donotShowInfoMsg": true,
+  "explorer.confirmDelete": false,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "leetcode.hint.setDefaultLanguage": false,
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+
+  "python.defaultInterpreterPath": "c:\\Users\\harsh\\AppData\\Local\\Programs\\Python\\Python313\\python.exe"
+}
